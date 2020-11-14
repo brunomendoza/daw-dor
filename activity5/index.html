@@ -8,6 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <style>
+      .background-red {
+        background-color: #F00;
+      }
+
+      .background-blue {
+        background-color: #00F;
+      }
+
+      .background-grey {
+        background-color: grey;
+      }
+    </style>
+    
     <title>Activity 5: Responsive design</title>
   </head>
   <body>
@@ -28,6 +42,45 @@
     </ul>
 
     <!-- Your code here -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yeah" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="yeah">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Option 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Option 2</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="hell" data-toggle="dropdown">Option 3</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Option 3.1</a>
+                <a href="#" class="dropdown-item">Option 3.2</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="wrapper">
+      <div class="row">
+        <div class="col-md-8 background-red">
+          <p>Main Content</p>
+        </div>
+        <div class="col-md-4 background-blue">
+          <p>Right Menu</p>
+        </div>
+      </div>
+    </div>
+    <footer class="container background-grey">
+      <div class="row">
+        <div class="col">Footer</div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
