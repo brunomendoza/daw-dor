@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Singles</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .card-footer {
+            background-color: inherit;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <h1 class="display-4">Super Singles</h1>
+                <p>La web de los solteros con habilidades especiales donde la privacidad está garantizada.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Nuestros Nuevos Miembros</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="./pics/leatherface.jpeg" alt="Leather Face" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">Leatherface</h5>
+                            <p class="card-text">
+                                Le gustan las motosierras y los machetes.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Conóceme</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./pics/freddykrueger.jpeg" alt="Freddy Krueger" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">Freddy Krueger</h5>
+                            <p class="card-text">
+                                Un soñador con un juego de cuchillos fantástico.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Conóceme</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./pics/michaelmyers.jpeg" alt="Miachel Myers" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Myers</h5>
+                            <p class="card-text">
+                                Amante de los carnavales y el zumo de tomate.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Conóceme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Únete ya</h3>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="bio">Bio</label>
+                        <input type="text" name="bio" id="bio" class="form-control" placeholder="Bio">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <button class="submit btn btn-primary btn-block">Únete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
