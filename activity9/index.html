@@ -7,14 +7,60 @@
 
     <title>Activity 9: Responsive images</title>
     <style>
-    </style>
+      .container {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+      }
+
+      .box {
+          max-width: 840px;
+          display: flex;
+          flex-flow: column nowrap;
+      }
+
+      img, picture {
+          max-width: 100%;
+          margin: 0 auto;
+      }
+  </style>
   </head>
   <body>
-    <h1>Activity 9: Responsive images</h1>
-    <p>1. Using &lt;img srcset...&gt; make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
-    <!-- 1st activity here-->
-    <p>2. Using &lt;picture&gt; stuff make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
-    <!-- 2nd activity here-->
+    
+    
+    <div class="container">
+      <h1>Activity 9: Responsive images</h1>
+      <div class="box">
+        <p>1. Using &lt;img srcset...&gt; make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
+        <!-- 1st activity here-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in ex nulla. Pellentesque sapien velit, gravida vel tempor a, condimentum non augue. Pellentesque viverra molestie sodales. Cras eget lorem nec metus hendrerit ultrices. Cras rutrum massa magna, at aliquam lorem volutpat eget. Ut sit amet hendrerit lacus, pellentesque auctor nulla.</p>
+        <!-- Como el ejercicio no lo especifica utilicé el ancho de la
+          imagen y el atributo 'sizes' en vez de la resolución. -->
+          <img src="trees.jpg" alt="Restos de un árbol con una arboleda de fondo."
+          srcset="trees-320w.jpg 320w,
+          trees-480w.jpg 480w,
+          trees-640w.jpg 640w"
+          sizes="(max-width: 640px) 320px,
+          (max-width: 800px) 480px,
+          640px">
+        </div>
+        <div class="box">
+          <p>2. Using &lt;picture&gt; stuff make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
+          <!-- 2nd activity here-->
+          <!-- Según la documentación ofrecida por MDN el atributo 'media'
+              del elemento 'source' solo debira utilizarse en casos de
+              dirección de arte.
+              Como el ejercicio se refiere a tres imágenes sin especificar
+              más datos he utilizado el atributo 'media' para marcar los
+              puntos de ruptura en el diseño haciendo caso omiso a la regla. -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in ex nulla. Pellentesque sapien velit, gravida vel tempor a, condimentum non augue. Pellentesque viverra molestie sodales. Cras eget lorem nec metus hendrerit ultrices. Cras rutrum massa magna, at aliquam lorem volutpat eget. Ut sit amet hendrerit lacus, pellentesque auctor nulla.</p>
+          <picture>
+              <source media="(min-width: 800px)" srcset="trees-640w.jpg">
+              <source media="(min-width: 640px)" srcset="trees-480w.jpg">
+              <img src="trees-320w.jpg" alt="Un árbol caido en un bosque.">
+          </picture>
+      </div>
+  </div>
 
     <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Need help?</a><a href="https://www.youtube.com/watch?v=7UMNQrUF2ps">Video</a></p>
   </body>
