@@ -19,18 +19,18 @@
 function showContent1(){
     var content = document.getElementById('content');
     content.innerHTML = `
-        <h2 class="important"></h2>
-        <span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span>
-        <h1>and lot more</h1>
-        Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore
-        <h1>content</h1>
-        <h4>is</h4>
-        <h4>important</h4>'
+        <h2 class="important">This is the first content:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo nulla repellat minus ipsa tenetur odit commodi deleniti repudiandae rem assumenda, voluptates ullam! Eum, expedita maxime voluptate ea aliquid assumenda sunt numquam iste libero debitis accusantium optio doloribus, pariatur, eos repudiandae. Nostrum cumque consequuntur illum quas vel debitis est delectus!</p>
+        <h3>And lot more</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo nulla repellat minus ipsa tenetur odit commodi deleniti repudiandae rem assumenda, voluptates ullam! Eum, expedita maxime voluptate ea aliquid assumenda sunt numquam iste libero debitis accusantium optio doloribus, pariatur, eos repudiandae. Nostrum cumque consequuntur illum quas vel debitis est delectus!</p>
+        <p class="display-1">Content</p>
+        <p class="display-2">is</p>
+        <p class="display-2">important</p>
     `;
     
 }
 
 function showContent2(){
     var content = document.getElementById('content');
-    content.innerHTML = '<b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt'
+    content.innerHTML = '<b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt';
 }
