@@ -1,0 +1,65 @@
+.item{
+    border: 1px solid black;
+}
+
+#flexcontainer5 .item{
+    max-width: 70px;
+}
+
+.huge{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.highlight{
+    background-color: #FF0  ;
+    padding: 0.50rem;
+    font-weight: bold;
+    line-height: 2.5;
+    color: black;
+}
+img{
+    vertical-align: middle;
+}
+
+.topmenu-option{
+    padding: .5rem;
+    background-color: black;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.topmenu-submenu{
+    float:left;
+}
+
+#topmenu1 {
+    height: 30px;
+}
+
+ul.navbar-nav {
+    width: 100%;
+}
+
+.navbar .nav-item {
+    flex: 1 1 25%;
+}
+
+.navbar .nav-link {
+    padding: .5rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
+    color: #CCC;
+}
+
+@media screen and (min-width: 576px) {
+    .navbar .nav-item {
+        margin-right: 1rem;
+    }
+
+    .nav-bar .nav-item:last-child {
+        margin-right: 0;
+    }
+}

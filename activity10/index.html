@@ -4,49 +4,33 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Activity 10: Accesibility</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Activity 10: Accesibility</title>
-    <style>
-     .item{
-       border: 1px solid black;
-     }
-     #flexcontainer5 .item{
-       max-width: 70px;
-     }
-     .huge{
-       font-size: 2em;
-       font-weight: bold;
-     }
-     .highlight{
-       background-color: #DD0000;
-       color: red;
-     }
-     img{
-       vertical-align: middle;
-     }
-
-     .topmenu-option{
-       background-color: black;
-       border-radius: 6px;
-       color: #333;
-     }
-
-     .topmenu-submenu{
-       float:left;
-     }
-     #topmenu1 {
-       height: 30px;
-     }
-    </style>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <span class="huge">Activity 10: Accesibility</span>
-    <p>This is a nightmare webpage in terms of <img src="accesibility.png" /> change <span class="highlight">anything you need</span> to make it shine.</p>
     <div class="container">
-      <div class="row" >
+      <div class="row">
+        <div class="col">
+          <h1 class="huge">Activity 10: Accesibility</h1>
+          <p>This is a nightmare webpage in terms of <img src="accesibility.png" alt="'accesibility' word."/> change <span class="highlight">anything you need</span> to make it shine.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+              <li id="topmenu1" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 1</a></li>
+              <li id="topmenu2" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 2</a></li>
+              <li id="topmenu3" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 3</a></li>
+              <li id="topmenu4" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 4</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-sm-3" id="topmenu1">
           <div class="topmenu-option">
             Menú 1
