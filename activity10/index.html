@@ -23,9 +23,15 @@
           <div class="col">
             <nav class="navbar navbar-expand-sm">
               <ul class="navbar-nav">
-                <li id="topmenu1" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 1</a></li>
-                <li id="topmenu2" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 2</a></li>
-                <li id="topmenu3" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 3</a></li>
+                <li id="topmenu1" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topmenu-option" id="topmenu1_nav-item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu 1</a>
+                  <div class="dropdown-menu" aria-labelledby="topmenu1_nav-item">
+                    <a class="dropdown-item" href="https://www.google.com">Google</a>
+                    <a class="dropdown-item" href="https://www.bing.com">Bing</a>
+                  </div>
+                  <!-- <a class="nav-link topmenu-option" href="">Menu 1</a></li> -->
+                <li id="topmenu2" class="nav-item"><a class="nav-link topmenu-option" href="https://www.wikipedia.org">Menu 2</a></li>
+                <li id="topmenu3" class="nav-item"><a class="nav-link topmenu-option" href="https://www.youtube.com">Menu 3</a></li>
                 <li id="topmenu4" class="nav-item"><a class="nav-link topmenu-option" href="#">Menu 4</a></li>
               </ul>
             </nav>
