@@ -37,7 +37,11 @@ img{
     height: 30px;
 }
 
-ul.navbar-nav {
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
     width: 100%;
 }
 
